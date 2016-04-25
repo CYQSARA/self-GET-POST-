@@ -43,6 +43,7 @@
         
     }];
     NSString *str = [strM substringToIndex:strM.length-1];
+    //MARK:-对汉字百分号转译
     str = [str stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     if ([HTTPMethod isEqualToString:@"POST"]) {
